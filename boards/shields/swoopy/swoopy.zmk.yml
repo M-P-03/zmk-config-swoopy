@@ -1,0 +1,13 @@
+file_foramt: "1"
+id: swoopy
+name: Swoopy
+type: shield
+url: https://github.com/M-P-03/zmk-config-swoopy
+required-boards:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - swoopy_left
+  - swoopy_right
+  
