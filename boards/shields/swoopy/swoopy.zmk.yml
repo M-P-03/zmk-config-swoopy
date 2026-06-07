@@ -1,9 +1,9 @@
-file_foramt: "1"
+file_format: "1"
 id: swoopy
 name: Swoopy
 type: shield
 url: https://github.com/M-P-03/zmk-config-swoopy
-required-boards:
+requires:
   - pro_micro
 features:
   - keys
