@@ -1,0 +1,13 @@
+if SHIELD_SWOOPY_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Swoopy Left"
+
+endif
+
+if SHIELD_SWOOPY_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Swoopy Right"
+
+endif
