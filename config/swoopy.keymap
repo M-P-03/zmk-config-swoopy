@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <locale/keys_de.h>
 
 / {
     keymap {
@@ -11,16 +12,16 @@
                 &kp Q    &kp W    &kp E    &kp R    &kp T               &kp Y    &kp U    &kp I    &kp O    &kp P
                 &kp A    &kp S    &kp D    &kp F    &kp G               &kp H    &kp J    &kp K    &kp L    &kp SEMI
                 &kp Z    &kp X    &kp C    &kp V    &kp B               &kp N    &kp M    &kp COMMA &kp DOT &kp FSLH
-                                  &none    &kp LCTRL &kp SPC       &kp BSPC  &kp RSFT    &kp RET
+                                  &none    &kp LCTRL  &mt LCTRL SPC     &kp RSFT   &kp BSPC    &kp RET
             >;
         };
 
-        upper_layer {
+        number_layer {
             bindings = <
-                &none   &kp N7   &kp N8   &kp N9   &kp KP_MULTIPLY          &kp LBKT   &kp RBKT    &none     &none     &none
-                &kp KP_DIVIDE  &kp N4   &kp N5   &kp N6  &kp KP_PLUS        &kp LPAR   &kp RPAR    &kp LT   &kp GT &none
-                &none   &kp N1   &kp N2   &kp N3   &kp KP_MINUS             &kp LBRC   &kp RBRC    &none      &none     &none
-                                  &none   &kp N0      &trans                &trans  &trans   &trans
+                &kp KP_DIVIDE   &kp N7   &kp N8   &kp N9    &kp KP_MULTIPLY     &kp DE_LBRC   &kp DE_RBRC    &none     &none     &none
+                &kp KP_MINUS    &kp N4   &kp N5   &kp N6    &kp KP_PLUS         &kp DE_LPRN   &kp DE_RPRN    &kp DE_LABK   &kp DE_RABK &none
+                &kp DOT         &kp N1   &kp N2   &kp N3    &kp COMMA           &kp DE_LCBR   &kp DE_RCBR    &none      &none     &none
+                                  &mt    &kp N0      &mt RET SPC                &trans  &trans   &trans
             >;
         };
 
