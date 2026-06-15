@@ -31,7 +31,7 @@
                 &kp KP_DIVIDE   &kp N7   &kp N8   &kp N9    &kp KP_MULTIPLY     &kp DE_LBRC   &kp DE_RBRC    &none     &none     &none
                 &kp KP_MINUS    &kp N4   &kp N5   &kp N6    &kp KP_PLUS         &kp DE_LPRN   &kp DE_RPRN    &kp DE_LABK   &kp DE_RABK &none
                 &kp DOT         &kp N1   &kp N2   &kp N3    &kp COMMA           &kp DE_LCBR   &kp DE_RCBR    &kp DE_QMARK     &kp DE_EXLM     &none
-                                  &mt    &kp N0      &kp RET                &trans  &trans   &trans
+                                  &none    &kp N0      &kp RET                &trans  &trans   &trans
             >;
         };
 
