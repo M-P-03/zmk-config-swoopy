@@ -4,6 +4,7 @@
 / {
     chosen {
         zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &swoopy_layout;
     };
 
     default_transform: keymap_transform_0 {
