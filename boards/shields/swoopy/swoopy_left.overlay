@@ -1,10 +1,11 @@
 #include "swoopy.dtsi"
 
-
-sensors: sensors {
-    compatible = "zmk,keymap-sensors";
-    sensors = <&left_encoder>;
-    triggers-per-rotation = <20>;
+/ {
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
 };
 
 &left_encoder {
