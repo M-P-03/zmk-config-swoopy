@@ -28,7 +28,7 @@
                 &kp Z    &kp X    &kp C    &kp V    &kp B               &kp N    &kp M    &kp COMMA &kp DOT &kp 
                                   &none    &kp LCTRL  &mt LCTRL SPC     &kp RSFT   &kp BSPC    &kp RET
             >;
-            sensor-bindings = <&inc_dec_msc SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         upper_layer {
