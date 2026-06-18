@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define DE_LPRN LS(N8)      // (
 #define DE_RPRN LS(N9)      // )
@@ -26,7 +27,7 @@
                 &kp Z    &kp X    &kp C    &kp V    &kp B               &kp N    &kp M    &kp COMMA &kp DOT &kp 
                                   &none    &kp LCTRL  &mt LCTRL SPC     &kp RSFT   &kp BSPC    &kp RET
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_msc SCRL_UP SCRL_DOWN>;
         };
 
         upper_layer {
