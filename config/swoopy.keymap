@@ -23,10 +23,19 @@
             bindings = <
                 &kp Q    &kp W    &kp E    &kp R    &kp T               &kp Y    &kp U    &kp I    &kp O    &kp P
                 &kp A    &kp S    &kp D    &kp F    &kp G               &kp H    &kp J    &kp K    &kp L    &kp SEMI
-                &kp Z    &kp X    &kp C    &kp V    &kp B               &kp N    &kp M    &kp COMMA &kp DOT &kp FSLH
+                &kp Z    &kp X    &kp C    &kp V    &kp B               &kp N    &kp M    &kp COMMA &kp DOT &kp 
                                   &none    &kp LCTRL  &mt LCTRL SPC     &kp RSFT   &kp BSPC    &kp RET
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        upper_layer {
+            bindings = <
+                &none   &none   &none   &none   &none                    &kp DE_LBRC   &kp DE_RBRC    &none     &none     &none
+                &none   &none   &none   &none   &none                    &kp DE_LPRN   &kp DE_RPRN    &kp DE_LABK   &kp DE_RABK &none
+                &none   &none   &none   &none   &none                    &kp DE_LCBR   &kp DE_RCBR    &kp DE_QMARK     &kp DE_EXLM     &none
+                                &none   &none   &none                    &trans  &trans   &trans
+            >;
         };
 
         number_layer {
@@ -88,6 +97,15 @@
             timeout-ms = <50>;
             key-positions = <4 5>;
             bindings = <&studio_unlock>;
+        };
+    };
+
+    behaviors {
+        qm_excl: question_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK>, <&kp EXCL>;
+            mods = <(MOD_LSFT | MOD_RSFT)>;
         };
     };
 };
